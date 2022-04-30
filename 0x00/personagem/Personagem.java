@@ -81,14 +81,15 @@ public abstract class Personagem {
 
     @Override
     public String toString() {
-        return "Personagem{" +
-                "nome='" + nome + '\'' +
-                ", tipo=" + tipo +
-                ", inteligencia=" + inteligencia +
-                ", forca=" + forca +
-                ", vigor=" + vigor +
-                ", resistencia=" + resistencia +
-                ", destreza=" + String.format(Locale.US, "%,.2f", getDanoAtaque())+
-                '}';
+        return "Personagem { " +
+                "nome = " + nome +
+                ", tipo = " + tipo +
+                ", inteligencia = " + inteligencia +
+                ", forca = " + forca +
+                ", vigor = " + vigor +
+                ", resistencia = " + resistencia +
+                ", destreza = " + destreza +
+                ", dano ataque = " + String.format(Locale.US,"%,.2f", getDanoAtaque()) +
+                " }";
     }
 }
