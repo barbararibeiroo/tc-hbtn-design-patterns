@@ -17,7 +17,7 @@ public class CalculadorSalarioService {
         }
     }
 
-    public double calcularSalarioLiquido(double salarioBruto, double valorDescontos, double valorVedas, double percentualComissao) {
+    public double calcularSalarioLiquido(double salarioBruto, double valorDescontos, double valorVendas, double percentualComissao) {
         return salarioBruto - valorDescontos + (valorVendas * (percentualComissao / 100));
     }
 
